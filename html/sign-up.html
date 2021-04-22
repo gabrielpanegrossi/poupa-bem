@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/pages/global.css" />
+		<title>Poupa Bem</title>
+		<script src="../../scripts/utils.js"></script>
+		<script type="text/javascript" src="../scripts/html-injector.js"></script>
+		<script type="text/javascript" src="../scripts/sign-up.js" defer></script>
+	</head>
+	<body>
+		<div id="main-sign-up" class="inherit">
+			<div class="container-sign-up">
+				<h1>
+					<a href="#" onclick="goHome()">
+						<img src="../media/img/logo.png" alt="Poupe Bem logo" />
+						<p>Poupa Bem</p>
+					</a>
+				</h1>
+				<form>
+					<div>
+						<label for="userName">Nome *</label>
+						<input type="text" id="userName" required />
+					</div>
+					<div>
+						<label for="lastName">Sobrenome</label>
+						<input type="text" id="lastName" />
+					</div>
+					<div>
+						<label for="userEmail">Email *</label>
+						<input type="email" id="userEmail" required />
+					</div>
+					<div>
+						<label for="userPassword">Senha *</label>
+						<input type="password" id="userPassword" required />
+					</div>
+					<div>
+						<label for="userPasswordConfirmartion">Confirme a senha *</label>
+						<input type="password" id="userPasswordConfirmartion" required />
+					</div>
+					<button type="button" onclick="createUser()">Registrar</button>
+				</form>
+				<div class="sign-up-links">
+					<a href="#" onclick="goSignIn()">Já possuo uma conta.</a>
+					<a href="#" onclick="goForgetPass()">Esqueceu a senha?</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

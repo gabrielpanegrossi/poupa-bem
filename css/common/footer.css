@@ -1,0 +1,77 @@
+#principal-footer {
+  width: 100%;
+  background-color: rgba(230, 230, 230, 0.1);
+}
+
+#principal-footer #principal-footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 10vh;
+  padding: 0 2.5% 0 2.5%;
+  border-top: 1px solid rgba(230, 230, 230, 0.4);
+}
+
+#principal-footer #principal-footer-container a {
+  font-size: 1.5rem;
+  color: #89bfcc;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+#principal-footer #principal-footer-container a:hover {
+  text-decoration: underline;
+}
+
+#principal-footer #principal-footer-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+#principal-footer #principal-footer-container ul a {
+  font-size: 2.5rem;
+  color: #9bd9e8;
+}
+
+#principal-footer #principal-footer-container ul a:hover {
+  color: #89bfcc;
+}
+
+@media (min-width: 770px) {
+  #principal-footer-container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+    margin: auto;
+  }
+  #principal-footer-container > a {
+    white-space: nowrap;
+    color: #89bfcc;
+  }
+  #principal-footer-container ul {
+    width: 25% !important;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+    gap: 10%;
+  }
+}

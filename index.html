@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Poupa Bem</title>
+		<link rel="stylesheet" href="./css/pages/global.css" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="./scripts/utils.js" defer></script>
+		<script src="./scripts/html-injector.js" defer></script>
+		<script src="./scripts/sign-in.js" defer></script>
+		<script src="./scripts/sign-up.js" defer></script>
+		<script src="./scripts/my-transactions.js" defer></script>
+		<script src="./scripts/log-out.js" defer></script>
+		<script src="./scripts/logged-in-menu.js" defer></script>
+		<script src="./scripts/forget-password.js" defer></script>
+	</head>
+	<body id="htmlBodyGlobal">
+		<header id="principal-header">
+			<div class="home-header-container">
+				<h1>
+					<a href="#" onclick="goHome()">
+						<img src="./media/img/logo.png" alt="Poupe Bem logo" />
+						<p>Poupa Bem</p>
+					</a>
+				</h1>
+				<nav>
+					<ul>
+						<li><a href="#" id="mainPages">Sobre nós</a></li>
+						<li><p>|</p></li>
+						<li>
+							<a href="#" id="btnOptions">
+								<span id="userStatus">Login</span>
+								<span id="subMenuOpening" class="none">
+									<i class="fas fa-sort-down showsubmenu"></i>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<nav class="sub-menu" id="sub-menu-container">
+			<ul>
+				<li id="logOut"><span>Logout</span></li>
+				<li>
+					<span id="showMyTransactions">Minhas finanças</span>
+				</li>
+			</ul>
+		</nav>
+		<main id="principal-main">
+			<div id="home-main">
+				<article class="home-main-container">
+					<div>
+						<h2>Bem vindo ao Poupa Bem!</h2>
+						<p>
+							O poupa bem é uma plataforma para o seu controle de finanças, aqui
+							você é livre para calcular seus gastos mensais, fazer analises e
+							avaliar seu financeiro.
+						</p>
+					</div>
+					<figure>
+						<img
+							src="./media/img/main-figure-removebg-preview.png"
+							alt="Um homem com um computador sentado em uma moeda."
+						/>
+					</figure>
+				</article>
+			</div>
+			<div id="about-us-main" class="none">
+				<article class="about-us-container">
+					<div>
+						<h2>Poupa Bem</h2>
+						<p>
+							Somos uma nova no mercado mas seriedade e foco nos objetivos,
+							visando fazer uma mudança no mercado financeiro auxiliando cada
+							usuario a como controlar e investir seu dinheiro da melhor forma,
+							priorizando obrigações sem deixar a felicidade de lado.
+						</p>
+					</div>
+					<figure>
+						<img
+							src="./media/img/pig-removebg-preview.png"
+							alt="Um homem guardando uma moeda em um cofre de porquinho."
+						/>
+					</figure>
+				</article>
+			</div>
+			<div id="main-sign-in" class="none">
+				<div class="container-sign-in">
+					<h1>
+						<a href="#" onclick="goHome()">
+							<img src="./media/img/logo.png" alt="Poupe Bem logo" />
+							<p>Poupa Bem</p>
+						</a>
+					</h1>
+					<form>
+						<div>
+							<label for="userEmailLogIn">Email</label>
+							<input type="email" id="userEmailLogIn" />
+						</div>
+						<div>
+							<label for="userPasswordLogIn">Senha</label>
+							<input type="password" id="userPasswordLogIn" />
+						</div>
+						<button type="button" onclick="login()">Logar</button>
+					</form>
+					<div class="sign-in-links">
+						<a href="#" onclick="goSignUp()">Se inscrever.</a>
+						<a href="#" onclick="goForgetPass()">Esqueceu a senha?</a>
+					</div>
+				</div>
+			</div>
+			<div id="main-sign-up" class="none">
+				<div class="container-sign-up">
+					<h1>
+						<a href="#" onclick="goHome()">
+							<img src="./media/img/logo.png" alt="Poupe Bem logo" />
+							<p>Poupa Bem</p>
+						</a>
+					</h1>
+					<form>
+						<div>
+							<label for="userName">Nome *</label>
+							<input type="text" id="userName" required />
+						</div>
+						<div>
+							<label for="lastName">Sobrenome</label>
+							<input type="text" id="lastName" />
+						</div>
+						<div>
+							<label for="userEmail">Email *</label>
+							<input type="email" id="userEmail" required />
+						</div>
+						<div>
+							<label for="userPassword">Senha *</label>
+							<input type="password" id="userPassword" required />
+						</div>
+						<div>
+							<label for="userPasswordConfirmartion">Confirme a senha *</label>
+							<input type="password" id="userPasswordConfirmartion" required />
+						</div>
+						<button type="button" onclick="createUser()">Registrar</button>
+					</form>
+					<div class="sign-up-links">
+						<a href="#" onclick="goSignIn()">Já possuo uma conta.</a>
+						<a href="#" onclick="goForgetPass()">Esqueceu a senha?</a>
+					</div>
+				</div>
+			</div>
+			<div id="main-forget-password" class="none">
+				<div class="container-forget-password">
+					<h1>
+						<a href="#" onclick="goHome()">
+							<img src="./media/img/logo.png" alt="Poupe Bem logo" />
+							<p>Poupa Bem</p>
+						</a>
+					</h1>
+					<form>
+						<div>
+							<label for="userEmailForgetPass">Confirme o seu email</label>
+							<input type="email" id="userEmailForgetPass" />
+						</div>
+						<button type="button" onclick="showPassword()">Confirmar</button>
+					</form>
+					<div class="forget-password-links">
+						<a href="#" onclick="goSignUp()">Se inscrever.</a>
+						<a href="#" onclick="goSignIn()">Já possuo uma conta.</a>
+					</div>
+				</div>
+			</div>
+			<div id="my-transactions-main" class="none">
+				<div class="my-transactions-main-container">
+					<div class="search-container">
+						<div>
+							<p>Tipo de Busca</p>
+							<select name="selectTypeOfSearch" id="selectTypeOfSearch">
+								<option value="1">Id</option>
+								<option value="2">Descrição</option>
+								<option value="3">Tipo</option>
+								<option value="4">Categoria</option>
+							</select>
+						</div>
+						<input
+							id="inputSearch"
+							type="text"
+							placeholder="Pesquise transações..."
+						/>
+					</div>
+					<div id="status-container">
+						<div class="show-status">
+							<div>
+								<p>Saldo:</p>
+								<p>R$ <span id="onScreenBalance">0</span></p>
+							</div>
+							<div>
+								<p>Total de receitas:</p>
+								<p>R$ <span id="onScreenTotalIncome">0</span></p>
+							</div>
+							<div>
+								<p>Média das receitas:</p>
+								<p>R$ <span id="onScreenIncomeAvarage">0</span></p>
+							</div>
+							<div>
+								<p>Total de despesas</p>
+								<p>R$ <span id="onScreenTotalSpent">0</span></p>
+							</div>
+							<div>
+								<p>Média das despesas</p>
+								<p>R$ <span id="onScreenSpentAvarage">0</span></p>
+							</div>
+						</div>
+					</div>
+					<form>
+						<h2>Adicione gastos e entradas abaixo</h2>
+						<div class="space">
+							<label for="inputDescription">Descrição do item</label>
+							<input type="text" id="inputDescription" />
+						</div>
+						<div>
+							<label for="selectType">Tipo</label>
+							<select name="selectType" id="selectType">
+								<option value="5">Receita</option>
+								<option value="6">Despesa</option>
+							</select>
+						</div>
+						<div>
+							<label for="inputPrice">Valor</label>
+							<input type="number" id="inputPrice" />
+						</div>
+						<div>
+							<label for="selectCategory">Categoria</label>
+							<select name="selectType" id="selectCategory">
+								<option value="7">Lazer</option>
+								<option value="8">Trabalho</option>
+								<option value="9">Entretenimento</option>
+								<option value="10">Contas Pagas</option>
+								<option value="11">Investimentos</option>
+							</select>
+						</div>
+						<button type="button" id="btnSave">Salvar</button>
+					</form>
+					<div id="showTransactions"></div>
+				</div>
+			</div>
+		</main>
+		<footer id="principal-footer">
+			<div id="principal-footer-container">
+				<a href="">Reporte um bug</a>
+				<ul>
+					<li>
+						<a href=""><i class="fab fa-facebook-square"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fab fa-instagram-square"></i></a>
+					</li>
+					<li>
+						<a href=""><i class="fab fa-twitter-square"></i></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>

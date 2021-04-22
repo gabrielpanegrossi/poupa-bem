@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Poupa Bem</title>
+		<link rel="stylesheet" href="../css/pages/global.css" />
+	</head>
+	<body>
+		<div id="my-transactions-main" class="inherit">
+			<div class="my-transactions-main-container">
+				<div class="search-container">
+					<div>
+						<p>Tipo de Busca</p>
+						<select name="selectTypeOfSearch" id="selectTypeOfSearch">
+							<option value="1">Id</option>
+							<option value="2">Descrição</option>
+							<option value="3">Tipo</option>
+							<option value="4">Categoria</option>
+						</select>
+					</div>
+					<input
+						id="inputSearch"
+						type="text"
+						placeholder="Pesquise transações..."
+					/>
+				</div>
+				<div id="status-container">
+					<div class="show-status">
+						<div>
+							<p>Saldo:</p>
+							<p>R$ <span id="onScreenBalance">0</span></p>
+						</div>
+						<div>
+							<p>Total de receitas:</p>
+							<p>R$ <span id="onScreenTotalIncome">0</span></p>
+						</div>
+						<div>
+							<p>Média das receitas:</p>
+							<p>R$ <span id="onScreenIncomeAvarage">0</span></p>
+						</div>
+						<div>
+							<p>Total de despesas</p>
+							<p>R$ <span id="onScreenTotalSpent">0</span></p>
+						</div>
+						<div>
+							<p>Média das despesas</p>
+							<p>R$ <span id="onScreenSpentAvarage">0</span></p>
+						</div>
+					</div>
+				</div>
+				<form>
+					<h2>Adicione gastos e entradas abaixo</h2>
+					<div class="space">
+						<label for="inputDescription">Descrição do item</label>
+						<input type="text" id="inputDescription" />
+					</div>
+					<div>
+						<label for="selectType">Tipo</label>
+						<select name="selectType" id="selectType">
+							<option value="5">Receita</option>
+							<option value="6">Despesa</option>
+						</select>
+					</div>
+					<div>
+						<label for="inputPrice">Valor</label>
+						<input type="number" id="inputPrice" />
+					</div>
+					<div>
+						<label for="selectCategory">Categoria</label>
+						<select name="selectType" id="selectCategory">
+							<option value="7">Lazer</option>
+							<option value="8">Trabalho</option>
+							<option value="9">Entretenimento</option>
+							<option value="10">Contas Pagas</option>
+							<option value="11">Investimentos</option>
+						</select>
+					</div>
+					<button type="button" id="btnSave">Salvar</button>
+				</form>
+				<div id="showTransactions">
+					<!-- <div id="containerShowTransactions"> -->
+					<!-- <div class="container-transaction receita">
+						<div>
+							<div>
+								<p>Descrição:</p>
+								<p>nome</p>
+							</div>
+
+							<div>
+								<p>Tipo:</p>
+								<p class="sim-underline">Receita</p>
+							</div>
+
+							<div>
+								<p>Categoria:</p>
+								<p>Trabalho</p>
+							</div>
+
+							<div>
+								<p>Valor:</p>
+								<p>10,00</p>
+							</div>
+
+							<div class="fav-icons">
+								<div>
+									<i class="fas fa-trash-alt nao"></i>
+								</div>
+								<div>
+									<i class="fas fa-pen sim"></i>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					<!-- <div class="container-transaction despesa">
+						<div>
+							<div>
+								<p>Descrição:</p>
+								<p>nome</p>
+							</div>
+
+							<div>
+								<p>Tipo:</p>
+								<p class="nao-underline">Despesa</p>
+							</div>
+
+							<div>
+								<p>Categoria:</p>
+								<p>Lazer</p>
+							</div>
+
+							<div>
+								<p>Valor:</p>
+								<p>10,00</p>
+							</div>
+
+							<div class="fav-icons">
+								<div>
+									<i class="fas fa-trash-alt nao"></i>
+								</div>
+								<div>
+									<i class="fas fa-pen sim"></i>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					<!-- </div> -->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

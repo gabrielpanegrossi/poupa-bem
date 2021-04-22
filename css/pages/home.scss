@@ -1,0 +1,96 @@
+@import url(../../style.css);
+@import url(../common/global.css);
+@import url(../autoloads/global.css);
+
+body {
+	width: 100%;
+}
+
+#home-main {
+	width: 100%;
+
+	.home-main-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-direction: column;
+
+		height: 80vh;
+		width: 100%;
+		margin: auto;
+
+		div {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+
+			width: 95%;
+			gap: 1rem;
+			h2 {
+				font-size: 2rem;
+			}
+			p {
+				font-size: 1.5rem;
+			}
+		}
+
+		figure {
+			height: 60%;
+			img {
+				object-fit: contain;
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (min-width: 770px) {
+	.home-main-container {
+		flex-direction: row !important;
+		justify-content: space-evenly !important;
+
+		div {
+			text-align: start !important;
+
+			width: 50% !important;
+
+			h2 {
+				font-size: 2.5rem !important;
+			}
+
+			p {
+				font-size: 1.8rem !important;
+			}
+		}
+
+		figure {
+			width: 40% !important;
+			height: 80% !important;
+		}
+	}
+}
+
+@media (min-width: 930px) {
+	.home-main-container {
+		div {
+			width: 42% !important;
+		}
+	}
+}
+
+@media (min-width: 1080px) {
+	.home-main-container {
+		div {
+			width: 38% !important;
+		}
+	}
+}
+
+@media (min-width: 1480px) {
+	.home-main-container {
+		div {
+			width: 490px !important;
+		}
+	}
+} ;

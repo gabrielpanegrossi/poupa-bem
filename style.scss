@@ -1,0 +1,25 @@
+:root {
+	font-size: 62.25%;
+}
+
+* {
+	box-sizing: border-box;
+	list-style: none;
+	font-style: none;
+	text-decoration: none;
+
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+}
+
+.none {
+	display: none !important;
+}
+
+.inherit {
+	display: inherit !important;
+}

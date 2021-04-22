@@ -1,0 +1,105 @@
+@import url(../../style.css);
+@import url(../common/global.css);
+@import url(../autoloads/global.css);
+body {
+  width: 100%;
+}
+
+#home-main {
+  width: 100%;
+}
+
+#home-main .home-main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+  width: 100%;
+  margin: auto;
+}
+
+#home-main .home-main-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 95%;
+  gap: 1rem;
+}
+
+#home-main .home-main-container div h2 {
+  font-size: 2rem;
+}
+
+#home-main .home-main-container div p {
+  font-size: 1.5rem;
+}
+
+#home-main .home-main-container figure {
+  height: 60%;
+}
+
+#home-main .home-main-container figure img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 770px) {
+  .home-main-container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+  }
+  .home-main-container div {
+    text-align: start !important;
+    width: 50% !important;
+  }
+  .home-main-container div h2 {
+    font-size: 2.5rem !important;
+  }
+  .home-main-container div p {
+    font-size: 1.8rem !important;
+  }
+  .home-main-container figure {
+    width: 40% !important;
+    height: 80% !important;
+  }
+}
+
+@media (min-width: 930px) {
+  .home-main-container div {
+    width: 42% !important;
+  }
+}
+
+@media (min-width: 1080px) {
+  .home-main-container div {
+    width: 38% !important;
+  }
+}
+
+@media (min-width: 1480px) {
+  .home-main-container div {
+    width: 490px !important;
+  }
+}

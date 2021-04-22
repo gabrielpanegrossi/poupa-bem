@@ -1,0 +1,157 @@
+#principal-header {
+  width: 100%;
+  background-color: rgba(230, 230, 230, 0.1);
+}
+
+#principal-header .home-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(230, 230, 230, 0.4);
+  padding: 0 2.5% 0 2.5%;
+  width: 100%;
+  height: 10vh;
+  margin: 0 auto 0 auto;
+}
+
+#principal-header .home-header-container nav ul,
+#principal-header .home-header-container h1 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#principal-header .home-header-container .action-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#principal-header .home-header-container h1 {
+  width: auto;
+  white-space: nowrap;
+}
+
+#principal-header .home-header-container h1 a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 6%;
+  width: 100%;
+  color: black;
+}
+
+#principal-header .home-header-container h1 a img {
+  width: 20%;
+}
+
+#principal-header .home-header-container nav {
+  width: 50%;
+  white-space: nowrap;
+}
+
+#principal-header .home-header-container nav ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 6%;
+}
+
+#principal-header .home-header-container nav ul li:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 62px;
+}
+
+#principal-header .home-header-container nav ul a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+  color: black;
+  border-bottom: none;
+}
+
+#principal-header .home-header-container nav ul a:hover {
+  border-bottom: 1px solid black;
+}
+
+#principal-header .home-header-container nav ul a i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+#principal-header .home-header-container nav ul p {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 500px) {
+  h1 a img {
+    width: 52.5px !important;
+  }
+  nav ul {
+    gap: 3% !important;
+  }
+}
+
+#sub-menu-container {
+  position: absolute;
+  display: none;
+  top: 10vh;
+  right: 2.5%;
+  padding: 1rem;
+  width: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+#sub-menu-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+#sub-menu-container ul > li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#sub-menu-container ul > li:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#sub-menu-container ul li + li {
+  padding-top: 1rem;
+}
+
+#sub-menu-container ul span {
+  font-size: 1.5rem;
+  color: black;
+}
