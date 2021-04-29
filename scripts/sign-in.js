@@ -14,7 +14,7 @@ const login = () => {
 	if (!inputUserEmailLogIn.value || !inputUserPasswordLogIn.value) {
 		alert("Por favor preencha todos os campos!");
 	} else if (
-		searchUser(inputUserPasswordLogIn.value, inputUserPasswordLogIn.value)
+		searchUser(inputUserEmailLogIn.value, inputUserPasswordLogIn.value)
 	) {
 		alert("Logado com sucesso.");
 		inserText(
